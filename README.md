@@ -12,7 +12,7 @@ Significance of the variables in predicting the Arrival Delay as identified by t
 ![Important Variables](Important_Variables.png)
 
 __Hyper-Parameter Tuning:__
-The following are the Random Forest Parameters that we care going to experiment with to find the best Parameters
+The following are the Random Forest Parameters that we care going to experiment with to find the best parameters.
 * __n_estimators__ = number of trees in the forest 
 * __max_features__ = max number of features considered for splitting a node 
 * __max_depth__ = max number of levels in each decision tree 
@@ -28,12 +28,12 @@ __***Best Parameters:***__
 * max_depth : 20
 * bootstrap : True
  
-__ArrDelay categories for Random Forest Classifier Model:__   
+__ArrDelay categories for Random Forest Classifier Model:__
 * Less than -30 minutes : Very Early
 * Less than 0 minutes & Greater than or equal to -30 minutes : Early
 * 0 minutes to 5 minutes : Ontime
 * 5 minutes to 30 minutes : Late
 * Greater than 30 minutes : Very late.
 
-__Conclusion:__ 
+__Conclusion:__  
 The accuracy of our Random Forest Classification is 81% while our Naive Bayes Classification is only 70%. We were able to generate the best Random Forest Classifier by hyper-parameter tuning. However we did could not do hyper-parameter tuning on the Naive Bayes classifier as it is so naive that it doesn't accept parameters except priors which we don't know.
